@@ -22,11 +22,6 @@ const App = () => {
     });
   }, [])
 
-  useEffect(() => {
-    if (!user) {
-      navigate("/login");
-    }
-  }, [user]);
 
 
   return (
