@@ -22,6 +22,13 @@ const App = () => {
     });
   }, [])
 
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+  }, [user]);
+
+
   return (
     <div>
       <ToastContainer theme='dark'/>
